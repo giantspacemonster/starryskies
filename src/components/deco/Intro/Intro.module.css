@@ -1,0 +1,68 @@
+.introHeading {
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  display: flex;
+  animation: FadeIN 4s 1;
+}
+.blinker {
+  font-weight: bold;
+  font-size: 72larger;
+  animation: blinkingText 1s infinite;
+}
+
+.typewriter {
+  width: 85%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+.fadeIntro {
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  display: flex;
+  animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 72%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes FadeIN {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

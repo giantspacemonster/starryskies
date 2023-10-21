@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    padding: 12px;
+    margin-top: 24px;
+    justify-content: space-around;
+}
+.inputLabel {
+    padding: 12px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 12px 0px 0px 12px;
+}
+.form input {
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 0 12px 12px 0;
+
+}
